@@ -244,7 +244,6 @@ class A_conv(nn.Module):
         self.conv = nn.Sequential(
             # in the original ARU-NET paper they use kernel_size of 4x4 in "attCNN" (Attention Network)
             nn.Conv2d(in_channels, out_channels, 4, 1, padding = 'same', bias=False),
-            nn.ReLU(inplace=True),
          )
 
     def forward(self, x):
