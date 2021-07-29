@@ -16,5 +16,5 @@ This framework includes the PyTorch version of the [ARU-Net](https://github.com/
 
 ## Testing / Inference 
 1. Put your testing dataset inside the "/data" folder (e.g. data/dataset/testing_images).
-2. Set the testing params and the correct model inside test.py. Example models are given inside "/models". Verify that the correct paths are set. Set EVALUATION to True if you want to evaluate the generated xmls with the ground truth.
+2. Set the testing params and the correct model inside test.py. Example models and their correct params are given inside "/models". Verify that the correct paths are set. Set EVALUATION to True if you want to evaluate the generated xmls with the ground truth.
 3. Run test.py. Results are saved into "/saved_test_images". If evaluation is enabled, xmls are saved inside "/saved_test_images_xml". Scores are printed out and saved inside an evaluation[...].txt file in the project folder.
