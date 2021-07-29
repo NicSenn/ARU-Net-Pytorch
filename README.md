@@ -4,7 +4,7 @@ This framework includes the PyTorch version of the [ARU-Net](https://github.com/
 
 ## Installation
 1. Use Python >= 3.8.8 and PyTorch >= 1.9
-2. Install needed packages in requirements.txt using a virtual environment (e.g. conda). If there are problems installing "albumentations while using conda, try "conda install -c conda-forge albumentations". 
+2. Install needed packages in requirements.txt using a virtual environment (e.g. conda). If there are problems installing "albumentations" while using conda, try "conda install -c conda-forge albumentations". 
 3. Install https://github.com/CyberZHG/torch-same-pad (pip install git+https://github.com/CyberZHG/torch-same-pad.git).
 4. If needed, set the PYTHONPATH to the project location.
 
