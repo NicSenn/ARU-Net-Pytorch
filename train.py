@@ -2,7 +2,7 @@ import torch
 from tqdm import tqdm
 import torch.nn as nn
 import torch.optim as optim
-from wandb.env import MODE
+#from wandb.env import MODE
 from model import create_aru_net
 from utils import(
     load_checkpoint,
