@@ -6,7 +6,7 @@ This framework includes the PyTorch version of the [ARU-Net](https://github.com/
 1. Use Python >= 3.8.8 and PyTorch >= 1.9
 2. Install needed packages in requirements.txt using a virtual environment (e.g. conda).
 3. Install https://github.com/CyberZHG/torch-same-pad (pip install git+https://github.com/CyberZHG/torch-same-pad.git).
-4. Set PYTHONPATH to the project location if needed.
+4. If needed, set the PYTHONPATH to the project location.
 
 ## Training
 1. Put your training dataset inside the "/data" folder: Split images and ground truth into seperate folders. (e.g. data/dataset/training_images and data/dataset/training_masks). Make sure your image masks are binarized.
