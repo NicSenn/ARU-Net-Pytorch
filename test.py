@@ -11,8 +11,8 @@ from utils import(
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 NUM_WORKERS = 2
 # Set the correct parameters according to the model
-IMAGE_HEIGHT = 768
-IMAGE_WIDTH = 768
+IMAGE_HEIGHT = 1024
+IMAGE_WIDTH = 1024
 PADDING = True # True when the model was trained with data augmentation / random downsampling
 PIN_MEMORY = True
 
@@ -27,17 +27,17 @@ MODEL = "aru" # choose "aru", "ru", or "u"
 NUM_SCALES = 5 # amount of scaled images you want to use you (e.g. 3: original image and two downscaled versions)
 
 # Model
-CHECKPOINT = "major-tree-848.tar"
+CHECKPOINT = "models\cbad_2019.tar"
 
 # Paths
-TEST_IMG_DIR = "data\cbad_2019/cbad_2019_test_images/"
+TEST_IMG_DIR = "data\cbad_2017_less_val/cbad_2017_simple_val_images/"
 TEST_OUTPUT_DIR = "saved_test_images/"
 TEST_OUTPUT_XML_DIR = "saved_test_images_xml/"
 
 # Evaluation 
-EVALUATE = False # if you want to evaluate with Transkribus Baseline Evaluation after inference
+EVALUATE = True # if you want to evaluate with Transkribus Baseline Evaluation after inference
 EVALUATION_DIR = "./evaluation/" # folder with Transkribus jar (trans.jar)
-TRUTH_XML_DIR = "data\Schriftproben_less\Schriftproben_less_val_xml/" # ground truth of test images
+TRUTH_XML_DIR = "data\cbad_2017_less_val/cbad_2017_simple_val_xml/" # ground truth of test images
 
 def main():
 

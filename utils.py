@@ -305,9 +305,9 @@ def evaluate(predicted_xml_dir, truth_xml_dir, evaluation_dir):
     # Evaluation with java tool
     cmd = 'java -jar {} {} {}'.format(cbad_jar, truth_pages_list, predicted_pages_list)
     result = subprocess.check_output(cmd, shell=True).decode()
-    with open(os.path.join(evaluation_dir, 'scores.txt'), 'w') as f:
-        f.write(result)
-    parse_score_txt(result, os.path.join(evaluation_dir, 'scores.csv'))
+    # with open(os.path.join(evaluation_dir, 'scores.txt'), 'w') as f:
+    #     f.write(result)
+    # parse_score_txt(result, os.path.join(evaluation_dir, 'scores.csv'))
 
     # Parse results from output of tool
     lines = result.splitlines()
